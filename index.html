@@ -40,8 +40,8 @@
                 <h2>Different type of natural oddities</h2>
 
                 <ol>
-                    <li><a href="#pink-lakes" >Pink-lakes</a></li> 
-                    <li><a href="#bioluminescent-bays">Bioluminescent-bays</a></li>
+                    <li><a href="#pink-lakes" >Pink lakes</a></li> 
+                    <li><a href="#bioluminescent-bays">Glowing Oceans</a></li>
                     <li><a href="#blood-falls">Blood-falls</a></li>
                     <li><a href="#sailing-stones">Sailing-stones</a></li>
                     <li><a href="#morning-glory-clouds">Glory clouds</a></li>
@@ -49,7 +49,7 @@
                     <li><a href="#catatumbo-lightning">Lightning Storm</a></li>
                 </ol>
             
-        </nav>
+         </nav>
     </header>
 
     <!--body's main section -->
@@ -226,7 +226,10 @@
                 <p>Due to their rarity and impressive appearance, Morning Glory clouds have attracted the attention of scientists and cloud chasers from around the world.</p>
             
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M0UCtQzJF1E?si=bKs9cYCu86a9ugt3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video controls  style="width: 100%; max-width: 550px;">
+                        <source src="glory-cloud.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </article>
 
@@ -255,7 +258,10 @@
                 <p>Despite its fiery appearance and the dangers associated with it, the Darvaza Gas Crater has become a popular tourist destination. Visitors can witness the flames up close and experience the intense heat radiating from the crater.</p>
             
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JkWq1xJqUQ4?si=PKAnQinTcOB_STJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video controls  style="width: 100%; max-width: 550px;">
+                        <source src="door2hell.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </article>
 
@@ -287,7 +293,10 @@
                 <p> These factors combine to create a near-constant atmospheric instability, leading to frequent thunderstorms and lightning activity.</p>
             
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8FfTpm2JZLc?si=fybDONpauE4K3Q4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video controls  style="width: 100%; max-width: 550px;">
+                        <source src="lightning-storm.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </article>
 
@@ -297,8 +306,22 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <p>My name is Hemant Jangir, and I'm a nature enthusiast with a lifelong passion for exploring the wonders of the natural world. <br>From hiking through dense forests to stargazing under the night sky, I've always been drawn to the beauty and mystery of our planet.</p>
+            <div class="about-container">
+                <div class="image-container">
+                    <img src="path/to/your-image.jpg" alt="Hemant Jangir">
+                </div>
+                <div class="text-container">
+                    <p>My name is <span>Hemant Jangir</span>, and I'm a nature enthusiast with a lifelong passion for exploring the wonders of the natural world.</p>
+                    <p>From hiking through dense forests to stargazing under the night sky, I've always been drawn to the beauty and mystery of our planet.</p>
+                    <div class="button-container">
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </section>
+
+
+        
           
         <section id="contact" class="contact">
             <div class="container">
@@ -335,7 +358,7 @@
                         </div>
                     </div>
                     <div class="col-2">
-                        <form>
+                        <form action="">
                             <div class="form-container">
                                 <h2>Send Message</h2>
                                 <div class="form-row">
@@ -356,7 +379,7 @@
                                         <textarea class="form-field" rows="4" placeholder="Your Message" required></textarea>
                                     </div>
                                 </div>
-                                <input type="submit" class="send-btn" value="Send">
+                                <button type="submit" class="send-btn glow-on-hover">Submit</button>
                             </div>
                         </form>
                     </div>
