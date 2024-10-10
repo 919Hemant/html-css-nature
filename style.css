@@ -43,7 +43,8 @@ header h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
-    background: linear-gradient(to right, #4b6cb7, #182848);
+    background-image: linear-gradient(red, yellow, blue);
+    background-attachment: fixed;
     padding: 15px 0;
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -61,7 +62,7 @@ header h1 {
   }
   
   nav ul li a {
-    color: white;
+    color: rgb(253, 253, 253);
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
@@ -182,10 +183,11 @@ article ul li {
     color: #f5f5f5;
 }
 
-/* Specific Articles with Custom Backgrounds */
+/* Specific Articles with linear gradient Backgrounds */
 article:nth-child(1) {
 
     background-image: linear-gradient(red, yellow, blue);
+    background-attachment: fixed;
     color: black;
 }
 
@@ -196,6 +198,7 @@ article:nth-child(1) p {
 
 article:nth-child(2) {
     background-image: linear-gradient(red, yellow, blue);
+    background-attachment: fixed;
     color: black;
 }
 
@@ -206,12 +209,14 @@ article:nth-child(2) p {
 
 article:nth-child(3) {
     background-image: linear-gradient(red, yellow, blue);
+    background-attachment: fixed;
     color: black;
 }
 
 article:nth-child(3) 
 {
     background-image: linear-gradient(red, yellow, blue);
+    background-attachment: fixed;
 }
 
 p {
@@ -219,6 +224,7 @@ p {
 }
 
 article:nth-child(4) {
+    background-attachment: fixed;
     background-image: linear-gradient(red, yellow, blue);
     color: black;
 }
@@ -228,6 +234,7 @@ article:nth-child(4) p {
 }
 
 article:nth-child(5) {
+    background-attachment: fixed;
     background-image: linear-gradient(red, yellow, blue);
     
     color: black;
@@ -238,14 +245,16 @@ article:nth-child(5) p {
 }
 
 article:nth-child(6) {
+    background-attachment: fixed;
     background-image: linear-gradient(red, yellow, blue);
-    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     color: black;
 }
  
 article:nth-child(7) {
+    background-attachment: fixed;
     background-image: linear-gradient(red, yellow, blue);
-    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     color: black;
 }
   
@@ -503,10 +512,11 @@ section {
   }
   
   main {
-    background-attachment: fixed;
+    
     background-position: center;
     padding: 8px;
-    background: url('sky.webp');
+    background: url('BEAR.webp');
+    background-size: auto;
   }
   
 
@@ -565,41 +575,76 @@ section {
 }
 
     /* About Me Section */
-    #about {
-        background: #418989;
-        padding: 30px;
+     #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         border-radius: 10px;
         margin: 20px auto;
         max-width: 800px;
+        background-image: linear-gradient(red, yellow, blue);
+        background-size: 100% 100%;
+        padding: 2rem 4rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+     }
+      
+      .aboutme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       
       #about h2 {
-        font-size: 2.5em;
-        color: #f45252;
-        margin-bottom: 10px;
+        font-size: 3em;
+        color: #efefef;
+        margin-bottom: 1.3rem;
+        text-align: center;
       }
       
       #about p {
         font-size: 1.1em;
         color: #000000;
-      }
-    
-    #about {
-        background-image: linear-gradient(red, yellow, blue);
-        background-size: 100% 100%;
-        padding: 4rem 2rem;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-    }
-    
-    #about h2 {
-        color: #ebf1eb;
-        font-size: 2rem;
-        margin-bottom: 1rem;
         text-align: center;
-    }
-    
+      }
+      
+      .image-container {
+        max-width: 550px; 
+        height: auto;
+        margin: 20px;
+      }
+      
+      .aboutme img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
 
+      /* media queries for about me */
+
+      @media (max-width: 768px) {
+        #about {
+          padding: 2rem 1rem;
+        }
+        #about h2 {
+          font-size: 2em;
+        }
+        #about p {
+          font-size: 1em;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        #about {
+          padding: 1rem 0.5rem;
+        }
+        #about h2 {
+          font-size: 1.5em;
+        }
+        #about p {
+          font-size: 0.9em;
+        }
+      }      
 
  
 
